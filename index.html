@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Usama Aljab, ICU Nurse in Kibuli, Uganda">
+<title>Usama Aljab | ICU Nurse</title>
+<style>
+:root{--g:#15803d;--gd:#14532d;--gl:#dcfce7;--bg:#f6fbf8;--tx:#1f2937}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--tx);background:var(--bg);line-height:1.65}
+a{color:inherit}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+nav .logo{font-weight:800;color:var(--g)}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{text-decoration:none;font-size:.95rem;font-weight:600;color:var(--gd)}
+nav ul a:hover{color:var(--g)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:110px 6% 60px;color:#fff;background:linear-gradient(135deg,#14532d,#15803d,#16a34a,#0e7490);background-size:300% 300%;animation:bg 12s ease infinite;position:relative;overflow:hidden}
+@keyframes bg{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.badge{background:rgba(255,255,255,.18);padding:6px 16px;border-radius:30px;font-size:.9rem;margin-bottom:18px;animation:up .8s both}
+.hero h1{font-size:clamp(2.2rem,8vw,4rem);line-height:1.15;animation:up .8s .15s both}
+.hero p{font-size:clamp(1rem,3vw,1.3rem);margin-top:12px;max-width:560px;animation:up .8s .3s both}
+.cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px;animation:up .8s .45s both}
+.btn{padding:13px 26px;border-radius:40px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.btn.w{background:#fff;color:var(--g)}
+.btn.o{border:2px solid #fff;color:#fff}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+
+/* HEARTBEAT */
+.pulse{width:min(420px,85%);margin-top:34px;opacity:.9}
+.pulse path{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:400;stroke-dashoffset:400;animation:beat 2.6s linear infinite}
+@keyframes beat{to{stroke-dashoffset:-400}}
+
+/* SECTIONS */
+section{padding:80px 6%}
+.wrap{max-width:1000px;margin:0 auto}
+h2{font-size:clamp(1.6rem,5vw,2.2rem);color:var(--g);margin-bottom:8px}
+.line{width:60px;height:4px;background:var(--g);border-radius:4px;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;padding:24px;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,.07);border-top:4px solid var(--g);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(21,128,61,.2)}
+.card .ic{font-size:1.9rem;margin-bottom:8px}
+.card h3{color:var(--gd);margin-bottom:6px}
+.alt{background:var(--gl)}
+
+/* TIMELINE */
+.tl{border-left:3px solid var(--g);padding-left:22px;display:grid;gap:22px}
+.tl div{position:relative;background:#fff;padding:18px 20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.tl div::before{content:"";position:absolute;left:-31px;top:22px;width:14px;height:14px;background:var(--g);border:3px solid var(--bg);border-radius:50%}
+
+/* CONTACT */
+.contact{text-align:center}
+.contact .grid{max-width:700px;margin:0 auto}
+.contact a.card{text-decoration:none;display:block}
+footer{background:var(--gd);color:#d1fae5;text-align:center;padding:22px;font-size:.9rem}
+
+/* FLOATING WHATSAPP */
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.3);animation:ring 2.4s infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:600px){nav ul{gap:12px}nav ul a{font-size:.8rem}nav .logo{font-size:.9rem}section{padding:60px 6%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="logo">Usama Aljab</span>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <span class="badge">🩺 Registered in Kibuli, Uganda</span>
+  <h1>Usama Aljab</h1>
+  <p>ICU Nurse dedicated to compassionate, skilled care for critically ill patients.</p>
+  <div class="cta">
+    <a class="btn w" href="https://wa.me/256781246419">💬 WhatsApp Me</a>
+    <a class="btn o" href="#about">Learn More</a>
+  </div>
+  <svg class="pulse" viewBox="0 0 400 60"><path d="M0 30 H120 L140 30 L155 8 L175 52 L190 30 H400"/></svg>
+</header>
+
+<section id="about">
+  <div class="wrap reveal">
+    <h2>About Me</h2><div class="line"></div>
+    <p>I am an ICU nurse currently working at Kibuli. I have trained and worked in several hospitals, building strong hands-on skills in caring for critically ill patients with compassion, accuracy and professionalism.</p>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <div class="reveal"><h2>Skills</h2><div class="line"></div></div>
+    <div class="grid">
+      <div class="card reveal"><div class="ic">❤️</div><h3>Critical Care</h3><p>Caring for patients in intensive care settings.</p></div>
+      <div class="card reveal"><div class="ic">📈</div><h3>Patient Monitoring</h3><p>Tracking vital signs and responding to changes quickly.</p></div>
+      <div class="card reveal"><div class="ic">🩺</div><h3>Patient Assessment</h3><p>Careful assessment to support doctors and the care team.</p></div>
+      <div class="card reveal"><div class="ic">🤝</div><h3>Teamwork</h3><p>Working well in fast-paced hospital environments.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="reveal"><h2>Experience</h2><div class="line"></div></div>
+    <div class="tl">
+      <div class="reveal"><strong>ICU Nurse</strong><br>Kibuli (Current)</div>
+      <div class="reveal"><strong>Nursing Training</strong><br>Several hospitals</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt contact">
+  <div class="wrap">
+    <div class="reveal"><h2>Get in Touch</h2><div class="line" style="margin:0 auto 28px"></div></div>
+    <div class="grid">
+      <a class="card reveal" href="tel:+256781246419"><div class="ic">📞</div><h3>Call</h3><p>0781246419</p></a>
+      <a class="card reveal" href="https://wa.me/256781246419"><div class="ic">💬</div><h3>WhatsApp</h3><p>Send a message</p></a>
+      <a class="card reveal" href="mailto:usamaaljab@gmail.com"><div class="ic">✉️</div><h3>Email</h3><p>usamaaljab@gmail.com</p></a>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Usama Aljab. All rights reserved.</footer>
+
+<a class="wa" href="https://wa.me/256781246419" aria-label="WhatsApp">💬</a>
+
+<script>
+document.getElementById("yr").textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
